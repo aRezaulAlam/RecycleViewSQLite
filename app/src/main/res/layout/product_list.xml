@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/container_product_list"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:textStyle="normal"
+        android:id="@+id/product_name" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:id="@+id/category"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/product_name"
+        android:layout_alignRight="@+id/product_name"
+        android:layout_alignEnd="@+id/product_name" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="Location"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/category"
+        android:layout_alignRight="@+id/category"
+        android:layout_alignEnd="@+id/category" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:text="Price"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/location"
+        android:layout_alignRight="@+id/location"
+        android:layout_alignEnd="@+id/location" />
+</RelativeLayout>
